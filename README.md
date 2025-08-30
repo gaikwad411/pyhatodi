@@ -26,3 +26,19 @@ Clone the repository and install locally (development mode):
 git clone https://github.com/gaikwad411/pyhatodi.git
 cd pyhatodi
 pip install -e .
+```
+
+## Usage
+pyhatodi jwt decode <your_jwt_token>
+
+
+## Why Local?
+Avoid leaking sensitive tokens to online decoders.
+Works completely offline.
+Lightweight and fast.
+
+## Roadmap
+JSON/YAML formatter & validator
+Base64 encoder/decoder
+HTTP request tester 
+Mock server generator
