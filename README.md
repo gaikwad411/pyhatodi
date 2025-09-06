@@ -19,17 +19,10 @@ More tools coming soon!
 ---
 
 ## Installation
-
-Clone the repository and install locally (development mode):
-
-```bash
-git clone https://github.com/gaikwad411/pyhatodi.git
-cd pyhatodi
-pip install -e .
-```
+```pip install pyhatodi``
 
 ## Usage
-pyhatodi jwt decode <your_jwt_token>
+```pyhatodi jwt decode <your_jwt_token>```
 
 
 ## Why Local?
@@ -42,3 +35,14 @@ JSON/YAML formatter & validator
 Base64 encoder/decoder
 HTTP request tester 
 Mock server generator
+
+## Installation (development)
+
+Clone the repository and install locally (development mode):
+
+```bash
+git clone https://github.com/gaikwad411/pyhatodi.git
+cd pyhatodi
+pip install -e .
+```
+
