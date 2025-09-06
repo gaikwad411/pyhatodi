@@ -3,10 +3,8 @@
 name: Python package for Pyhatodi
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  release:
+    types: [published]
 
 jobs:
   pypi-build-and-publish:
@@ -24,7 +22,7 @@ jobs:
       steps:
 
         - uses: actions/checkout@v4
-
+          
         - name: Install uv
           uses: astral-sh/setup-uv@v6
           with:
@@ -32,6 +30,12 @@ jobs:
 
         - name: Set up Python
           run: uv python install
+
+        - name: Extract version
+          run: echo "PACKAGE_VERSION=${GITHUB_REF_NAME#v}" >> $GITHUB_ENV
+
+        - name: Update version
+          run: sed -i "s/^version = .*/version = \"${PACKAGE_VERSION}\"/" pyproject.toml
 
         - name: Build distributions
           run: uv build
