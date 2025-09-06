@@ -1,6 +1,6 @@
 # Pyhatodi
 
-**Pyhatodi** (from *hatodi* = "hammer" in Hindi) is a lightweight developer toolkit designed to help Python developers with everyday tasks—locally and securely.  
+**Pyhatodi** (from *hatodi* = "small hammer" in Hindi) is a lightweight developer toolkit designed to help Python developers with everyday tasks—locally and securely.  
 
 > **Why Pyhatodi?**  
 > Many developers use online tools for quick debugging tasks like decoding JWT tokens, risking exposure of sensitive information. Pyhatodi brings these utilities to your local machine, ensuring privacy and speed.
