@@ -42,4 +42,12 @@ jobs:
       
         - name: Publish to PyPI
           run: uv publish        
-                      
+
+        - name: Commit version bump
+          run: |
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add pyproject.toml
+            git commit -m "Bump version to ${PACKAGE_VERSION}"
+            git push origin HEAD:main
+            
