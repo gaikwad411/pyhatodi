@@ -1,6 +1,6 @@
 [project]
 name = "pyhatodi"
-version = "0.1.9"
+version = "0.1.10"
 description = "Toolkit for developers."
 readme = "README.md"
 requires-python = ">=3.13"
