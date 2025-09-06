@@ -23,6 +23,8 @@ More tools coming soon!
 
 ## Usage
 ```pyhatodi jwt decode <your_jwt_token>```
+```pyhatodi b64 encode <text to encode in base64>```
+```pyhatodi b64 decode <base64 encoded string>```
 
 
 ## Why Local?
