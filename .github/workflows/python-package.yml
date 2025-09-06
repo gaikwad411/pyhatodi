@@ -17,7 +17,8 @@ jobs:
         url: https://pypi.org/p/pyhatodi
       
       permissions:
-        id-token: write
+        contents: write
+        id-token: write            
       
       steps:
 
@@ -50,4 +51,4 @@ jobs:
             git add pyproject.toml
             git commit -m "Bump version to ${PACKAGE_VERSION}"
             git push origin HEAD:main
-            
+
