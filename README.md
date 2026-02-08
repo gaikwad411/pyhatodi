@@ -54,3 +54,4 @@ cd pyhatodi
 pip install -e .
 ```
 
+#### Pipeline test
