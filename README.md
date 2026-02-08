@@ -53,5 +53,3 @@ git clone https://github.com/gaikwad411/pyhatodi.git
 cd pyhatodi
 pip install -e .
 ```
-
-#### Pipeline test
